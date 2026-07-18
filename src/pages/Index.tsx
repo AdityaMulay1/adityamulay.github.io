@@ -81,30 +81,31 @@ const heroQuotes = [
 ];
 
 const heroMetrics = [
-  { label: "Active Deployment", value: "Cerebrospark / ongoing" },
+  { label: "Recent Deployment", value: "Cerebrospark / completed" },
+  { label: "Current Focus", value: "Open to roles / 2026" },
+  { label: "Latest Certification", value: "AWS CCP / CLF-C02" },
   { label: "Breakthrough Win", value: "Aurora / INR 2,00,000" },
-  { label: "Enterprise Exposure", value: "Accenture / AXA Japan" },
-  { label: "Academic Signal", value: "Aneka / NAAC demo" },
 ];
 
 const featuredMissions: Mission[] = [
   {
     id: "cerebrospark",
-    label: "Current deployment",
+    label: "Recently completed internship",
     title: "Project Intern // Cerebrospark Innovations",
-    period: "Started Jan 20, 2026 // ongoing",
+    period: "Jan 20, 2026 - Apr 20, 2026",
     summary:
-      "This is where software stops being abstract. I am working around drone navigation systems, surveillance-oriented aerial workflows, and research into making autonomous systems more efficient, more aware, and more useful in the real world.",
+      "This was the internship where software stopped being abstract. I worked around drone navigation systems, surveillance-oriented aerial workflows, and research into making autonomous systems more efficient, more aware, and more useful in the real world.",
     notes: [
       "Exposure to autonomous aerial systems, intelligent sensing, and field-aware software thinking.",
       "Research and experimentation around efficiency, navigation behavior, and real-world operating constraints.",
-      "A startup culture that moves fast, demands ownership, and sharpens decision-making under pressure.",
+      "A startup culture that moved fast, demanded ownership, and sharpened decision-making under pressure.",
     ],
     chips: [
       "Drone navigation",
       "Aerial surveillance",
       "Research work",
       "High-ownership startup pace",
+      "Internship completed",
     ],
     primaryImage:
       "/assets/gallery/Cerebrospark - Aditya Mulay working on a drone.jpeg",
@@ -143,7 +144,7 @@ const featuredMissions: Mission[] = [
     ],
     tone: "signal",
     footnote:
-      "Some work stays intentionally abstract here. The point is the domain, the pace, and the mindset.",
+      "Some work stays intentionally abstract here. What matters publicly is the domain exposure, the startup pace, and the ownership it demanded from me.",
   },
   {
     id: "accenture",
@@ -349,7 +350,12 @@ const experiments = [
 const credentialLinks: ActionLink[] = [
   {
     label: "Resume",
-    href: "/assets/certificates/Aditya_Mulay_CV.pdf",
+    href: "/assets/certificates/Aditya_Mulay_Resume_CV.pdf",
+    external: true,
+  },
+  {
+    label: "Project Profile",
+    href: "/assets/certificates/Aditya_Mulay_Profile.pdf",
     external: true,
   },
   {
@@ -494,7 +500,7 @@ const Index = () => {
           </nav>
           <a
             className="nav-cta"
-            href={assetPath("/assets/certificates/Aditya_Mulay_CV.pdf")}
+            href={assetPath("/assets/certificates/Aditya_Mulay_Resume_CV.pdf")}
             target="_blank"
             rel="noreferrer"
           >
@@ -518,7 +524,9 @@ const Index = () => {
             <p className="hero-body">
               I move between AI products, cloud systems, autonomous environments,
               storytelling, public speaking, and research with the same instinct:
-              build something that matters outside the screen.
+              build something that matters outside the screen. After completing my
+              Cerebrospark internship, I am now looking for roles where that same
+              intensity can compound into larger systems.
             </p>
             <div className="hero-actions">
               <a href="#missions" className="action-link">
@@ -548,8 +556,8 @@ const Index = () => {
           <div className="hero-right-rail">
             <article className="notched-panel tone-signal hero-panel">
               <div className="panel-label-row">
-                <p className="panel-label">Current deployment</p>
-                <span className="panel-status">Ongoing</span>
+                <p className="panel-label">Recent deployment</p>
+                <span className="panel-status">Completed</span>
               </div>
               <div className="hero-portrait-frame">
                 <img
@@ -572,12 +580,12 @@ const Index = () => {
                   <p className="meta-value">Drone systems</p>
                 </div>
                 <div>
-                  <p className="meta-label">Previous</p>
-                  <p className="meta-value">Accenture / AXA Japan</p>
+                  <p className="meta-label">Current focus</p>
+                  <p className="meta-value">Open to roles</p>
                 </div>
                 <div>
-                  <p className="meta-label">Flagship</p>
-                  <p className="meta-value">Aurora / CRiEYA-funded</p>
+                  <p className="meta-label">Latest cert</p>
+                  <p className="meta-value">AWS CCP</p>
                 </div>
               </div>
             </article>
@@ -1081,6 +1089,7 @@ const Index = () => {
               <ul className="signal-list">
                 <li>Human-centered engineering rather than trend-chasing.</li>
                 <li>Systems thinking across AI, cloud, robotics, and research.</li>
+                <li>AWS Certified Cloud Practitioner (CCP - CLF-C02).</li>
                 <li>
                   Comfort with startup speed, enterprise context, and academic rigor.
                 </li>
@@ -1101,9 +1110,10 @@ const Index = () => {
                 If the signal feels real, reach out.
               </h2>
               <p className="section-copy">
-                This site is not trying to look employable. It is trying to look
-                honest, ambitious, and alive. If that resonates, I am one message
-                away.
+                This site is trying to look honest, ambitious, and alive. I am now
+                actively exploring roles where AI, cloud, autonomy, or systems
+                thinking can meet real human impact. If that resonates, I am one
+                message away.
               </p>
             </div>
             <div className="contact-actions">
